@@ -14,8 +14,22 @@ body {
     font-family: 'Rubik', sans-serif;
     width: 100vw;
     text-align: center;
+    align-items: center;
 }
 
 h1 {
     color: aliceblue;
+}
+
+
+#button {
+    margin-top: 50px;
+    width: 170px;
+    height: 40px;
+    background: none;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    border-radius: 7px ;
+    box-shadow: 5px 5px 30px;
 }
