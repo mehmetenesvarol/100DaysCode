@@ -1,0 +1,81 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, white, black);
+    font-family: 'Rubik', sans-serif;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+}
+
+#date-table {
+    margin-top: 30px;
+}
+
+td,
+th {
+    width: 135px;
+}
+
+.table-item-right {
+    text-align: right;
+}
+
+.table-item-left {
+    text-align: left;
+}
+
+#text-day {
+    width: 240px;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px 50px rgb(255, 0, 0);
+    font-size: 50px;
+    transform: translate(0%, 50%);
+}
+
+#text-day-wrapper {
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+#slider-wrapper{
+margin-top: 100px;
+}
+
+#slider {
+    width: 250px;
+    cursor: pointer;
+}
+
+.value-span{
+    display: inline-block;
+    font-size: small;
+}
+
+img {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#social-media-wrapper {
+    margin-top: 270px;
+}
+
+.social-media-div {
+    display: inline-block;
+}
