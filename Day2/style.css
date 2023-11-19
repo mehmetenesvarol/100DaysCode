@@ -1,0 +1,84 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    font-family: 'Rubik', sans-serif;
+    background: rgb(11, 0, 181);
+    background: linear-gradient(45deg, rgba(11, 0, 181, 1) 0%, rgba(199, 39, 204, 0.60) 50%, rgba(34, 218, 255, 1) 100%);
+}
+
+.calc-wrapper{
+    border: 4px white solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+input{
+    text-align: right;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    height: 70px;
+    width: 304px;
+    border: none;
+    border-radius: 7px;
+    font-size: 50px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 40px;
+    margin: 5px;
+    margin-bottom: 7px;
+}
+
+button:hover,
+input:hover{
+    opacity: 0.7;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.wide-1{
+    width: 65px;
+    height: 65px;
+}
+.wide-2{
+    width: 144px;
+    height: 65px;
+}
+.wide-3{
+    width: 224px;
+    height: 65px;
+    margin-bottom: 25px;
+}
+#p{
+    margin-right: 25px;
+    max-width: 100px;
+    display: inline;
+}
+#p-wrapper{
+    text-align: right;
+    height: 15px;
+    margin-bottom: 5px;
+}
