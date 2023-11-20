@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://wallpapers.com/images/hd/snowflake-background-ni6ez3uvoubxfhzf.jpg");
+    margin: 0;
+    font-size: 4rem;
+}
+
+.title {
+    margin-top: 3rem;
+}
+
+.container {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date {
+    font-size: 1rem;
+
+}
+
+.time {
+    font-size: 4rem;
+    font-family: 'Dosis', sans-serif;
+
+}
