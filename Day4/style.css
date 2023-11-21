@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background:
+        linear-gradient(rgb(1, 192, 255), transparent),
+        linear-gradient(to top left, rgb(2, 255, 2), transparent),
+        linear-gradient(to top right, rgb(255, 1, 1), transparent);
+    background-blend-mode: screen;
+}
+
+.row-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.piece {
+    width: 150px;
+    height: 150px;
+    border: 3px rgb(250, 120, 120) solid;
+    cursor: pointer;
+}
+
+.game-wrapper {
+    border: 15px rgb(250, 120, 120) solid;
+    flex-direction: row;
+    display: flex;
+}
+
+#restart-wrapper {
+    width: 170px;
+    margin-bottom: 13px;
+}
+
+#restart-button {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+#restart-button:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+}
+
+#restart-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+#restart-button:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
