@@ -44,7 +44,6 @@ function restart() {
     finishGame.innerHTML = ""
 }
 
-
 function shuffleArray(array) {
     let len = array.length,
         currentIndex;
@@ -97,9 +96,7 @@ function finishControl() {
     }
 }
 
-
 function swapTwo(idf) {
-    finishControl()
     if (imgPieces[idf].imgControl === true) {
         if (imgPieces[imgPieces[idf].whoFriends.frn1].imgControl === false) {
             if (idf === 0) {
@@ -139,10 +136,10 @@ function swapTwo(idf) {
             }
         }
     }
+    finishControl()
 }
 
 function swapThree(idf) {
-    finishControl()
     if (imgPieces[idf].imgControl === true) {
         if (imgPieces[imgPieces[idf].whoFriends.frn1].imgControl === false) {
             if (idf === 1) {
@@ -200,11 +197,10 @@ function swapThree(idf) {
             }
         }
     }
+    finishControl()
 }
 
 function swapFour(idf) {
-    finishControl()
-
     if (imgPieces[idf].imgControl === true) {
         if (imgPieces[imgPieces[idf].whoFriends.frn1].imgControl === false) {
             pieceFour.innerHTML = `<img style="display: none;" src="/Day4/img/AIwQ ${9}.png"alt="">`
@@ -224,4 +220,5 @@ function swapFour(idf) {
             swap(4, 7)
         }
     }
+    finishControl()
 }
