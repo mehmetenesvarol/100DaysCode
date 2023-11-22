@@ -31,7 +31,6 @@ function restart() {
     let arrThrow = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     while (true) {
         shuffleArray(arrThrow)
-        console.log(arrThrow)
         if (arrThrow[8] === 9) {
             break;
         }
@@ -80,7 +79,16 @@ function swap(swp1, swp2) {
 }
 
 function finishControl() {
-    if (true) {
+    if (
+        imgPieces[0].imgId === 1 &&
+        imgPieces[1].imgId === 2 &&
+        imgPieces[2].imgId === 3 &&
+        imgPieces[3].imgId === 4 &&
+        imgPieces[4].imgId === 5 &&
+        imgPieces[5].imgId === 6 &&
+        imgPieces[6].imgId === 7 &&
+        imgPieces[7].imgId === 8
+    ) {
         pieceEight.innerHTML = `<img src="/Day4/img/AIwQ 9.png"alt="">`
         finishGame.innerHTML = ` <img src="/Day4/img/angry.webp" style="height: 450px; width: 450px; margin: 5px;" alt="">`
         alert(`Congratulations !
