@@ -1,0 +1,83 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.left-site-title-1 {
+    animation: slideInLeft 1s ease;
+}
+
+.left-site-title-2 {
+    animation: slideInLeft 1.4s ease;
+}
+
+.left-site-title-3 {
+    animation: slideInLeft 1.8s ease;
+}
+
+.left-site-title-4 {
+    animation: slideInLeft 2.2s ease;
+}
+
+.left-site-text-1 {
+    animation: slideInLeft 1.2s ease;
+}
+
+.left-site-text-2 {
+    animation: slideInLeft 1.6s ease;
+}
+
+.left-site-text-3 {
+    animation: slideInLeft 2s ease;
+}
+
+.left-site-text-4 {
+    animation: slideInLeft 2.4s ease;
+}
+
+.right-site-title-1 {
+    animation: slideInRight 1s ease;
+}
+
+.right-site-title-2 {
+    animation: slideInRight 1.4s ease;
+}
+
+.right-site-title-3 {
+    animation: slideInRight 1.8s ease;
+}
+
+.right-site-title-4 {
+    animation: slideInRight 2.2s ease;
+}
+
+.right-site-text-1 {
+    animation: slideInRight 1.2s ease;
+}
+
+.right-site-text-2 {
+    animation: slideInRight 1.6s ease;
+}
+
+.right-site-text-3 {
+    animation: slideInRight 2s ease;
+}
+
+.right-site-text-4 {
+    animation: slideInRight 2.4s ease;
+}
