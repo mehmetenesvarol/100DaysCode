@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+header {
+    background-color: #c05151;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#hd-input{
+    width: 15%;
+    height: 30px;
+    border-radius: 15px;
+    min-width: 100px;
+    padding-left: 10px;
+    margin-top: 13px;
+}
+
+#hd-button{
+    width: 15%;
+    height: 35px;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 13px;
+}
+
+#performance{
+    display: flex;
+    width: 20%;
+}
+
+.container-slider {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.mySlides img {
+    aspect-ratio: 1/0.6;
+    object-fit: cover;
+}
+
+#info {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
+
+#info h1 {
+    color: white;
+}
