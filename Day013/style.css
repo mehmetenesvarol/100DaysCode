@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(184, 184, 184);
+}
+
+header {
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    margin-left: 10px;
+}
+
+header a i {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.container {
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container a {
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding-bottom: 1rem;
+    width: 40%;
+    height: 10rem;
+    border-radius: 20px;
+    background-color: gray;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.process-container {
+    margin-top: 10rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.process-wrapper {
+    min-width: 420px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    height: 10rem;
+    border-radius: 1.5rem;
+}
+
+.process-wrapper input {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    max-width: 20rem;
+    width: 35%;
+    min-width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+
+.process-a-wrapper {
+    min-width: 300px;
+    margin-top: 5rem;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    height: 5.5rem;
+    border-radius: 1.5rem;
+}
+
+.process-a-wrapper a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.result-container {
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-wrapper {
+    background-color: gray;
+    width: 40%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+}
+
+#result {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#result-screen {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#result-screen h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fa-icon{
+    margin-left: 40px;
+    margin-right: 40px;
+}
