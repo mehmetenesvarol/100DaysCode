@@ -15,18 +15,21 @@
 
     <header>
         <div id="hdr-wrapper">
-            <div id="hdr-img">
+            <div id="hdr-link">
                 <a href="https://www.duolingo.com/" target="_blank">
-                    <img src="/Day016/dulingo.png" alt="duolingo">
+                    <img src="/Day016/images/dulingo.png" alt="duolingo">
+                </a>
+                <a href="https://github.com/mehmetenesvarol?tab=repositories" target="_blank">
+                    <img src="/Day016/images/github.png" alt="githup profile">
                 </a>
             </div>
-            <div id="hdr-title">
+            <div>
                 <h2>English Handbook</h2>
             </div>
             <div id="hdr-bgc">
-                <button id="hdr-white">
+                <button id="hdr-dark">
                 </button>
-                <button id="hdr-black">
+                <button id="hdr-light">
                 </button>
             </div>
         </div>
@@ -44,15 +47,20 @@
                         </div>
                     </div>
                     <div class="lists" id="daily-list">
+
+                        <!-- display none flex -->
+                        <div class="add-rows">
+                            <input id="add-daily-input-word" type="text">
+                            <input id="add-daily-input-main" type="text">
+                        </div>
+
                         <div class="word-wrapper">
+                            <i onclick="metet(2)" class="fa-solid fa-xmark"></i>
                             <div class="wl-wrapper">
                                 <h5>word</h5>
                                 <h5>main</h5>
                             </div>
-                            <div class="i-wrapper">
-                                <h4>1</h4>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
+                            <i class="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -67,25 +75,36 @@
                         </div>
                     </div>
                     <div class="lists" id="all-list">
+
+                        <!-- display none flex -->
+                        <div class="add-rows">
+                            <input id="add-all-input-word" type="text">
+                            <input id="add-all-input-word" type="text">
+                        </div>
+
                         <div class="word-wrapper">
-                            <div class="i-wrapper">
-                                <i class="fa-solid fa-arrow-left"></i>
-                                <h4>1</h4>
-                            </div>
+                            <i class="fa-solid fa-arrow-left"></i>
                             <div class="wl-wrapper">
                                 <h5>word</h5>
                                 <h5>main</h5>
                             </div>
+                            <i class="fa-solid fa-xmark"></i>
                         </div>
                         <div class="word-wrapper">
-                            <div class="i-wrapper">
-                                <i class="fa-solid fa-arrow-left"></i>
-                                <h4>1</h4>
-                            </div>
+                            <i class="fa-solid fa-arrow-left"></i>
                             <div class="wl-wrapper">
                                 <h5>word</h5>
                                 <h5>main</h5>
                             </div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="word-wrapper">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <div class="wl-wrapper">
+                                <h5>word</h5>
+                                <h5>main</h5>
+                            </div>
+                            <i class="fa-solid fa-xmark"></i>
                         </div>
                     </div>
                 </div>
@@ -99,6 +118,7 @@
             <div id="exe-wrapper">
                 <form id="exe-form">
                     <h1 id="exe-word">word</h1>
+                    <h2 style="color: green;" id="exe-main">main</h2>
                     <input type="text" id="exe-input" placeholder=". . .">
                     <div id="form-control">
                         <button id="exe-back">
@@ -114,7 +134,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="/Day016/app.js"></script>
 </body>

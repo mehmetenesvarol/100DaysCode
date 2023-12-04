@@ -24,7 +24,6 @@ header {
     background-color: gray;
 }
 
-
 #hdr-wrapper {
     display: flex;
     align-items: center;
@@ -32,7 +31,14 @@ header {
     width: 100%;
 }
 
-#hdr-img a img {
+#hdr-link{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+#hdr-link a img {
     width: 50px;
     height: 50px;
 }
@@ -51,14 +57,14 @@ header {
     border-radius: 50%;
 }
 
-#hdr-black {
+#hdr-dark {
     background-color: black;
     cursor: pointer;
     border: 3px solid white;
 
 }
 
-#hdr-white {
+#hdr-light {
     background-color: white;
     cursor: pointer;
     border: 3px solid black;
@@ -146,6 +152,22 @@ header {
     margin-bottom: 20px;
 }
 
+.add-rows {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.add-rows input {
+    border-radius: 15px;
+    width: 140px;
+    height: 20px;
+    font-weight: 600;
+    font-size: small;
+}
+
 .word-wrapper {
     display: flex;
     align-items: center;
@@ -157,18 +179,15 @@ header {
     margin: 10px;
 }
 
+.word-wrapper i{
+    cursor: pointer;
+}
+
 .wl-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
-}
-
-.i-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
+    width: 80%;
 }
 
 /* display none flex */
@@ -216,13 +235,14 @@ header {
 }
 
 #exe-form input {
+    border: 5px solid white;
     width: 40%;
-    margin-top: 40px;
     height: 40px;
     border-radius: 20px;
     text-align: center;
     font-size: large;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 #form-control {
@@ -232,7 +252,7 @@ header {
 
 #form-control button {
     cursor: pointer;
-    height: 80px;
+    height: 70px;
     width: 200px;
     padding: 10px;
     border-radius: 20px;

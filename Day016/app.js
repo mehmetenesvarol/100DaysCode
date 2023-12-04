@@ -1,5 +1,5 @@
-const hdrWhite = document.getElementById("hdr-white")
-const hdrBlack = document.getElementById("hdr-black")
+const hdrDark = document.getElementById("hdr-dark")
+const hdrLight = document.getElementById("hdr-light")
 const addDailyBtn = document.getElementById("add-daily-btn")
 const startDailyBtn = document.getElementById("start-daily-btn")
 const addAllBtn = document.getElementById("add-all-btn")
@@ -12,6 +12,36 @@ const exePass = document.getElementById("exe-pass")
 const exeİnput = document.getElementById("exe-input")
 const exeWord = document.getElementById("exe-word")
 const exeForm = document.getElementById("exe-form")
+
+
+
+
+
+
+
+
+addDailyBtn.addEventListener("click",addDaily())
+
+function addDaily(){
+    // add to list
+}
+
+addAllBtn.addEventListener("click",addAll())
+
+function addAll(){
+    // add to list
+}
+
+function metet(x){
+    console.log(x)
+}
+
+hdrDark.addEventListener("click",(()=>{
+    // dark mode
+}))
+hdrLight.addEventListener("click",(()=>{
+    // light mode
+}))
 
 const words = {
     word1: {
