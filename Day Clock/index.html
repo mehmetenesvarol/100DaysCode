@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1-100</title>
+    <link rel="stylesheet" href="/Day Clock/style.css">
+</head>
+
+<body>
+
+    <h2 style="margin-top: 30px;">Day 1-100</h2>
+    <table id="date-table">
+        <tr>
+            <th class="table-item-left">Date</th>
+            <th class="table-item-right">Time</th>
+        </tr>
+        <tr>
+            <td class="table-item-left">Start</td>
+            <td class="table-item-right">18:11:2023</td>
+        </tr>
+        <tr>
+            <td class="table-item-left">Today</td>
+            <td class="table-item-right" id="text-today"></td>
+        </tr>
+        <tr>
+            <td class="table-item-left">My Goal</td>
+            <td class="table-item-right">25:02:2024</td>
+        </tr>
+    </table>
+
+    <div id="slider-wrapper">
+        <input id="slider" type="range" min="1" max="100" value="10" class="slider" id="myRange">
+    </div>
+
+    <div id="span-wrapper">
+        <span class="value-span" style="margin-right: 110px;">0</span>
+        <span class="value-span" style="margin-left: 110px;">100</span>
+    </div>
+
+    <div id="text-day-wrapper">
+    </div>
+
+    <div id="social-media-wrapper">
+        <div class="social-media-div">
+            <a href="https://github.com/mehmetenesvarol" target="_blank">
+                <img src="/Day Clock/images/github.png" alt="">
+            </a>
+        </div>
+        <div class="social-media-div">
+            <a href="https://twitter.com/MhmetEnesVarol" target="_blank">
+                <img src="/Day Clock/images/xTwitter.png" alt="">
+            </a>
+        </div>
+        <div class="social-media-div">
+            <a href="https://www.linkedin.com/in/mehmet-enes-varol-08b1272a0/" target="_blank">
+                <img src="/Day Clock/images/linkedln.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script src="/Day Clock/app.js"></script>
+</body>
+
+</html>

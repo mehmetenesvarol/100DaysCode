@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="/Notepad/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-file-lines fa-2xl header-icon"></i>
+        <div class="header-title">
+            NOTEPAD
+        </div>
+        <div class="header-search">
+            go to page:
+            <input class="header-input" placeholder="page" type="text"
+                onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="note-img-wrapper">
+            <img src="/Notepad/images/notepad.png" alt="">
+        </div>
+        <div class="note-text-wrapper">
+            <span class="page-span">page :</span>
+            <textarea class="note-textarea">
+            </textarea>
+        </div>
+        <div class="button-container">
+            <div class="icon-wrapper-previous">
+                <i class="fa-solid fa-left-long fa-2xl"></i>
+                <span class="span-button">previous</span>
+            </div>
+            <div class="icon-wrapper-next">
+                <i class="fa-solid fa-right-long fa-2xl"></i>
+                <span class="span-button">next</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Notepad/app.js"></script>
+</body>
+
+</html>
